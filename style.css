@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#container {
+    display: flex;
+    border: 1px solid #000;
+    width: 500px;
+    height: 500px;
+}
+
+.div-column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.div-element {
+    flex: 1;
+}
