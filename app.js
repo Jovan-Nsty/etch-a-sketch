@@ -1,4 +1,4 @@
-const numberOfDivs = 10;
+let numberOfDivs = 16;
 const container = document.getElementById('container');
 
 // draw divs in a div container
