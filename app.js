@@ -3,6 +3,24 @@ let divColumn;
 let divElement;
 const container = document.getElementById('container');
 const resetBtn = document.getElementById('reset');
+const gridSizeBtn = document.getElementById('gridnumb');
+
+// initial display of grid size
+let output = document.getElementById("grid-value");
+output.innerHTML = `${gridSizeBtn.value}x${gridSizeBtn.value}`;
+
+// display increment / decrement grid size
+gridSizeBtn.oninput = function () {
+    output.innerHTML = `${this.value}x${this.value}`;
+}
+
+// custom grid size
+gridSizeBtn.addEventListener('click', () => {
+    numberOfDivs = gridSizeBtn.value;
+    gridDelete();
+    draw(numberOfDivs);
+    paint();
+})
 
 // grid reset
 resetBtn.addEventListener('click', () => {
