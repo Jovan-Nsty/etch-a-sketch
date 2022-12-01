@@ -13,15 +13,27 @@
 <body>
     <section id="main">
         <div id="buttons">
-            <p>Custom color:</p>
-            <input type="color" id="color" name="random-color" value="#1D9BF0">
-            <button id="rgb">RGB</button>
-            <button id="erase">Erase</button>
-            <button id="paint">Paint</button>
-            <p>Grid Size:</p>
-            <input type="range" value=16 id="gridnumb" name="grid" min="1" max="64">
-            <p id="grid-value"></p>
-            <button id="reset">Reset</button>
+            <div class="btn">
+                <p>Custom color:</p>
+                <input type="color" id="color" name="random-color" value="#1D9BF0">
+            </div>
+            <div class="btn">
+                <button id="rgb">RGB</button>
+            </div>
+            <div class="btn">
+                <button id="erase">Erase</button>
+            </div>
+            <div class="btn">
+                <button id="paint">Paint</button>
+            </div>
+            <div class="btn">
+                <p>Grid Size:</p>
+                <input type="range" value=16 id="gridnumb" name="grid" min="1" max="64">
+                <p id="grid-value"></p>
+            </div>
+            <div class="btn">
+                <button id="reset">Reset</button>
+            </div>
         </div>
         <div id="container"></div>
     </section>
