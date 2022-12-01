@@ -4,6 +4,28 @@ let divElement;
 const container = document.getElementById('container');
 const resetBtn = document.getElementById('reset');
 const gridSizeBtn = document.getElementById('gridnumb');
+const eraseBtn = document.getElementById('erase');
+const paintBtn = document.getElementById('paint');
+
+// erase functionality
+eraseBtn.addEventListener('click', () => {
+    erase();
+})
+
+function erase() {
+    const divSelect = document.querySelectorAll('.div-element');
+
+    divSelect.forEach(function (n) {
+        n.addEventListener('mouseover', () => {
+            n.style.backgroundColor = null;
+        })
+    })
+}
+
+// continue painting after erasing
+paintBtn.addEventListener('click', () => {
+    paint();
+})
 
 // initial display of grid size
 let output = document.getElementById("grid-value");
