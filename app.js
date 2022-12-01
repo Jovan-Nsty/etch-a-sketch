@@ -6,6 +6,24 @@ const resetBtn = document.getElementById('reset');
 const gridSizeBtn = document.getElementById('gridnumb');
 const eraseBtn = document.getElementById('erase');
 const paintBtn = document.getElementById('paint');
+const rgbBtn = document.getElementById('rgb');
+
+rgbBtn.addEventListener('click', () => {
+    rgb();
+})
+
+function rgb() {
+    const divSelect = document.querySelectorAll('.div-element');
+
+    divSelect.forEach(function (n) {
+        n.addEventListener('mouseover', () => {
+            let colorOne = Math.floor(Math.random() * 255) * 1;
+            let colorTwo = Math.floor(Math.random() * 255) * 1;
+            let colorThree = Math.floor(Math.random() * 255) * 1;
+            n.style.backgroundColor = `rgb(${colorOne},${colorTwo},${colorThree})`;
+        })
+    })
+}
 
 // erase functionality
 eraseBtn.addEventListener('click', () => {
