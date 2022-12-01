@@ -1,6 +1,3 @@
-let numberOfDivs = 16;
-let divColumn;
-let divElement;
 const container = document.getElementById('container');
 const resetBtn = document.getElementById('reset');
 const gridSizeBtn = document.getElementById('gridnumb');
@@ -8,6 +5,10 @@ const eraseBtn = document.getElementById('erase');
 const paintBtn = document.getElementById('paint');
 const rgbBtn = document.getElementById('rgb');
 const colorBtn = document.getElementById('color');
+
+let numberOfDivs = 16;
+let divColumn;
+let divElement;
 let color = colorBtn.value;
 
 // custom color selection
@@ -85,9 +86,7 @@ function draw(numberOfDivs) {
 
         for (let j = 0; j < numberOfDivs; j++) {
             divElement = document.createElement('div');
-            divElement.style.border = '1px solid black';
             divElement.classList.add('div-element');
-
             divColumn.appendChild(divElement);
         }
 
