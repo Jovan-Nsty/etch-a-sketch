@@ -7,7 +7,15 @@ const gridSizeBtn = document.getElementById('gridnumb');
 const eraseBtn = document.getElementById('erase');
 const paintBtn = document.getElementById('paint');
 const rgbBtn = document.getElementById('rgb');
+const colorBtn = document.getElementById('color');
+let color = colorBtn.value;
 
+// custom color selection
+colorBtn.addEventListener('change', () => {
+    color = colorBtn.value;
+})
+
+// rgb functionality
 rgbBtn.addEventListener('click', () => {
     rgb();
 })
@@ -93,7 +101,7 @@ function paint() {
 
     divSelection.forEach(function (n) {
         n.addEventListener('mouseover', () => {
-            n.style.backgroundColor = 'red';
+            n.style.backgroundColor = color;
         })
     })
 }
