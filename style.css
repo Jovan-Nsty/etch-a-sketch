@@ -81,3 +81,23 @@ button {
     background-color: unset;
     color: #1D9BF0;
 }
+
+footer {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #1D9BF0;
+}
+
+img {
+    color: #1D9BF0;
+}
