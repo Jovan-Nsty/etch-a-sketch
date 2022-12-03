@@ -33,7 +33,6 @@ body {
 
 #container {
     display: flex;
-    border: 1px solid #1D9BF0;
     width: 500px;
     height: 500px;
     border: 1px solid #1D9BF0;
@@ -43,7 +42,6 @@ body {
     display: flex;
     flex: 1;
     flex-direction: column;
-    border: 1px solid #1D9BF0;
 }
 
 .div-element {
