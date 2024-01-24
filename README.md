@@ -1,3 +1,18 @@
-# etch-a-sketch
-Browser version of something between a sketchpad and an Etch-A-Sketch.
-Primary use of this project is to cement my DOM manipulation skills.
+# Etch a Sketch
+
+## Preview
+![screenshot](images/etchasketch.png)
+
+## Description
+* A simple etch a sketch game.
+
+## Made with
+* HTML, CSS and JavaScript.
+
+## Visit website
+* [Link](https://jovan-nsty.github.io/etch-a-sketch/)
+
+## Purpose
+* The purpose of this project was to focus on DOM manipulation.
+
+* This project was done following The Odin Project curriculum.
